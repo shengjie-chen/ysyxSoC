@@ -15,6 +15,6 @@ clean:
 
 dev-init:
 	git submodule update --init --recursive
-	cd rocket-chip && git apply ../patch/rocket-chip.patch
+	cd rocket-chip && git apply ../patch/rocket-chip.patch ../patch/build.patch
 
 .PHONY: verilog clean dev-init
