@@ -21,6 +21,6 @@ class ysyxSoCTop extends Module {
 }
 
 object Elaborate extends App {
-  val firtoolOptions = Array("--disable-annotation-unknown")
+  val firtoolOptions = Array("--disable-annotation-unknown", "--lowering-options=disallowPortDeclSharing")
   circt.stage.ChiselStage.emitSystemVerilogFile(new ysyxSoCTop, args, firtoolOptions)
 }
