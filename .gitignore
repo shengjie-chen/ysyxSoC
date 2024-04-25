@@ -2,3 +2,4 @@ build/
 out/
 .metals
 .vscode
+.idea
